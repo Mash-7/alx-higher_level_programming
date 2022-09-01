@@ -1,4 +1,5 @@
 # If/else, loops, functions
+The second ALX Higher Level Programming module project. Introduces if/else statements, loops, range and functions.
 
 ## Projects
 | Filename | Description |
