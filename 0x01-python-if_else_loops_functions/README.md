@@ -2,7 +2,7 @@
 The second ALX Higher Level Programming module project. Introduces if/else statements, loops, range and functions.
 
 ## Projects
-| Filename | Description |
+| Filename | Task |
 | -------- | ----------- |
 | `0-positive_or_negative.py` | Complete source code to print whether the number is positive or negative |
 | `1-last_digit.py` |  Complete source code to print the last digit of the number stored in the variable |
