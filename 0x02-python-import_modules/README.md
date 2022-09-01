@@ -2,7 +2,7 @@
 The third ALX Higher Level Programming module project. Introduces import functions, how to create modules and how to use command line arguments in Python.
 
 ## Projects
-| Filename | Description |
+| Filename | Task |
 | -------- | ----------- |
 | `0-add.py` | Write a program that imports the function def add(a, b): from the file add_0.py and prints the result of the addition 1 + 2 = 3 |
 | `1-calculation.py` | Write a program that imports functions from a file, does some Maths, and prints the result.|
