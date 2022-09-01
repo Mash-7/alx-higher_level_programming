@@ -2,7 +2,7 @@
 The first **ALX Higher Level Programming** module project. Introduces variables, basic commands and how to handle strings in Python.
 
 ## Projects
-| Filename | Description |
+| Filename | Task |
 | -------- | ----------- |
 | `0-run` | Write a Shell script that runs a Python script, to be stored in a environment variable ($PYFILE) |
 | `1-run_inline` | Write a Shell script that runs Python code, to be stored in a environment variable ($PYCODE) |
