@@ -6,8 +6,12 @@
 class Square:
     """Represents a square."""
 
-    def __init__(sef, siz=0, position=(0, 0)):
+    def __init__(self, size=0, position=(0, 0)):
         """Initializes a new square.
+
+        Args:
+            size (int): The size of the new square.
+            position (int, int): Position of the new square.
         """
         self.size = size
         self.position = position
@@ -18,7 +22,7 @@ class Square:
         return (self.__size)
 
     @size.setter
-    def size(size, value):
+    def size(self, value):
         """Sets the size value of the square object."""
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
@@ -33,6 +37,32 @@ class Square:
 
     @position.setter
     def position(self, value):
-        if (not isinstance(value, tuple) or
-                len(value) != 2 or
-                not all(isinstance(num, int)
+        if not isinstance(value, tuple):
+            raise TypeError("position must be a tuple of 2 positive integers")
+        if len(value) != 2:
+            raise TypeError("position must be a tuple of 2 positive integers")
+        if not isinstance (value[0], int):
+            raise TypeError("position must be a tuple of 2 positive integers")
+        if not isinstance (value[1], int):
+            raise TypeError("position must be a tuple of 2 positive integers")
+        if value[0] < 0 or value[1] < 0:
+            raise TypeError("position must be a tuple of 2 positive integers")
+        self.__position = value
+
+    def area(self):
+        """Returns the area of the object"""
+        return (self.__size * self.__size)
+
+    def my_print(self):
+        """Prints a # square according to the size value"""
+        if self.size == 0:
+            print()
+        else:
+            for  i in range(self.position[1]):
+                print()
+            for i in range(0, self.size):
+                for k in range(self.position[0]):
+                    print(" ", end='')
+                    for j in range(self.size):
+                        print("#", end='')
+                        print()
