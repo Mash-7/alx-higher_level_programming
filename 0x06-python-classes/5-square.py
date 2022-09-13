@@ -1,7 +1,11 @@
 #!/usr/bin/python3
+# 5-square.py
 """Defines a class square."""
+
+
 class Square:
     """Represents a square."""
+
     def __init__(self, size=0):
         """Initializes a new square object.
         """
@@ -9,7 +13,7 @@ class Square:
 
     @property
     def size(self):
-        """Returns the size value.
+        """Returns the current size value of the square.
         """
         return (self.__size)
 
@@ -20,17 +24,16 @@ class Square:
             raise TypeError("size must be an integer")
         elif value < 0:
             raise ValueError("size must be >= 0")
-        else:
-            self.__size = value
+        self.__size = value
 
     def area(self):
-        """Returns the area of the object"""
+        """Returns the current area of the object"""
         return (self.__size * self.__size)
 
     def my_print(self):
-        """Prints a # square per the size value"""
-        for n in range(0, self.__size):
-            [print("#", end="") for i in range(self.__size)]
+        """Prints a # square according to the size value"""
+        for i in range(0, self.__size):
+            [print("#", end="") for j in range(self.__size)]
             print("")
         if self.__size == 0:
             print("")
