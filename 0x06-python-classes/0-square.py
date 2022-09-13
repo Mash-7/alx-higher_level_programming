@@ -2,6 +2,7 @@
 # 0-square.py
 """Define a class square."""
 
+
 class Square:
-    """Represents a square."""
+    """Represent a square."""
     pass
